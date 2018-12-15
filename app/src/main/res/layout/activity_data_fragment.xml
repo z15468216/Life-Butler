@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999"
+    tools:context=".DataFragment">
+
+    <Switch
+        android:id="@+id/fan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:padding="20sp"
+        android:text="@string/fan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fan"
+        android:background="#ddd"
+        android:padding="15sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="5sp"
+                tools:ignore="NestedWeights">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_db"
+                        android:text="@string/txt_db"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#999"
+                        android:paddingStart="20sp"
+                        android:paddingTop="20sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        tools:ignore="RtlSymmetry" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_db"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:id="@+id/count_db"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10sp"
+                        android:text="@string/count"
+                        android:textColor="#393"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:layout_marginBottom="5sp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_CO"
+                        android:text="@string/txt_CO"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#999"
+                        android:paddingStart="20sp"
+                        android:paddingTop="20sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        tools:ignore="RtlSymmetry" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_co"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/count_CO"
+                        android:text="@string/count"
+                        android:textColor="#393"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="10sp"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_CH4"
+                        android:text="@string/txt_CH4"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#999"
+                        android:paddingStart="20sp"
+                        android:paddingTop="20sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        tools:ignore="RtlSymmetry" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_ch4"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/count_CH4"
+                        android:text="@string/count"
+                        android:textColor="#393"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10sp"/>
+
+                </RelativeLayout>
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_smoke"
+                        android:text="@string/txt_smoke"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#999"
+                        android:paddingStart="20sp"
+                        android:paddingTop="20sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        tools:ignore="RtlSymmetry" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_smoke"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/count_smoke"
+                        android:text="@string/count"
+                        android:textColor="#393"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

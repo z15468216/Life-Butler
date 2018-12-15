@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "350988381533",
+    "firebase_url": "https://life-butler-fcm.firebaseio.com",
+    "project_id": "life-butler-fcm",
+    "storage_bucket": "life-butler-fcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350988381533:android:06f32e5d099ab9d3",
+        "android_client_info": {
+          "package_name": "com.example.user.test_bottom_navigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350988381533-a01pbieanir9qntjpigdvthaokq5aohc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZmMdVRNtBc9azcse0UGr9UNOhTf3uiv4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

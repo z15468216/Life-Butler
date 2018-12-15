@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    tools:context=".UserFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc_profile"
+        android:layout_alignParentTop="true"
+        android:background="#45a1ba">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            tools:ignore="UseCompoundDrawables,UselessLeaf">
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_smile"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"
+                android:layout_marginTop="15sp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/profile_name"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:id="@+id/img_help"
+                android:background="#45a1ba"
+                android:src="@drawable/ic_help"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="1dp"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:ignore="UselessParent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/be-before"
+                            android:text="@string/be_before"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/be_before_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/be-before"
+                            android:text="@string/count"
+                            android:textColor="#fff"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"  />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:ignore="UselessParent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/analyze"
+                            android:text="@string/analyze"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/analyze_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/analyze"
+                            android:text="@string/count"
+                            android:textColor="#fff"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"  />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:ignore="UselessParent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/before"
+                            android:text="@string/before"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/before_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/before"
+                            android:text="@string/count"
+                            android:textColor="#fff"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_list"
+        android:background="#fff"
+        android:dividerHeight="2sp"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:layout_below="@+id/sc_profile"
+        android:layout_alignParentBottom="true">
+    </ListView>
+
+</RelativeLayout>
